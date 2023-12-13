@@ -13,7 +13,7 @@ node {
     }
 
     stage('Run image') {
-        docker.image('srv-web-ludo').withRun('--name srv_web-patrick' ) { c ->
+        docker.image('srv-web-ludo').withRun('--name srv_web-ludo' ) { c ->
 
         sh 'docker ps | grep srv_web-ludo'
 	}
